@@ -1,4 +1,12 @@
+from player import Player
+from game import Game
+from gestures import Gestures
+
+
 if __name__ == '__main__':
+    my_player = Player()
+    my_player.
+
 
 
 
