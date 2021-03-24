@@ -1,11 +1,7 @@
-from game import Game
-from gestures import Gestures
-
 
 class Player:
 
     def __init__(self, user_player, computer_player):
-        super().__init__(Game)
         self.name = input("Please enter your name")
         self.move = user_player
         self.computer_move = computer_player

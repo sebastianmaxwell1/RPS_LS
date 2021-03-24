@@ -1,11 +1,8 @@
-from player import Player
 from game import Game
-from gestures import Gestures
 
 if __name__ == '__main__':
-    my_player = Player()
-    my_player.user_move()
-
+    my_game = Game()
+    my_game.game_actions()
 
 # introduction
 # ask user if they want to play another human or cpu
