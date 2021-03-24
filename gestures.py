@@ -1,3 +1,6 @@
+from game import Game
+from player import  Player
+
 class Gestures:
 
     def __init__(self):

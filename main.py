@@ -2,12 +2,9 @@ from player import Player
 from game import Game
 from gestures import Gestures
 
-
 if __name__ == '__main__':
     my_player = Player()
-    my_player.
-
-
+    my_player.user_move()
 
 
 # introduction
@@ -32,5 +29,3 @@ if __name__ == '__main__':
 # ask loser if they want redemption
 
 # plays again
-
-
