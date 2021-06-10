@@ -1,15 +1,23 @@
+from gesture import Gesture
+
 
 class Player:
 
-    def __init__(self, user_player, computer_player):
-        self.name = input("Please enter your name")
-        self.move = user_player
-        self.computer_move = computer_player
-        self.gesture_list = ['rock[0]', 'paper[1]', 'scissors[2]', 'lizard[3]', 'spock[4]']
-        self.computer_gesture_list = ['rock[0]', 'paper[1]', 'scissors[2]', 'lizard[3]', 'spock[4]']
+    def __init__(self):
+        self.choice_1 = ""
+        self.choice_2 = ""
 
-    def user_move(self):
-        self.move = self.gesture_list
-
-    def computer_move(self, computer_player):
-        self.computer_move = self.computer_gesture_list
+    def pvp(self):
+        print("Choose a gesture!")
+        print(Gesture().gestures)
+        self.choice_1 = int(input("Player 1 Enter Choice: "))
+        while self.choice_1 != 0 and self.choice_1 != 1 and self.choice_1 != 2 and self.choice_1 != 3 and self.choice_1 != 4:
+            print("Invalid input please try again")
+            self.choice_1 = int(input("Player 1 Enter Choice: "))
+        self.choice_2 = int(input("Player 2 Enter Choice: "))
+        while self.choice_2 != 0 and self.choice_2 != 1 and self.choice_2 != 2 and self.choice_2 != 3 and self.choice_2 != 4:
+            print("Invalid,please try again!")
+            self.choice_2 = int(input("Player 2 Enter Choice: "))
+        print(f"Player 1 chooses {Gesture().gestures[self.choice_1]}")
+        print(f"Player 2 chooses {Gesture().gestures[self.choice_2]}")
+        return self.choice_1, self.choice_2
